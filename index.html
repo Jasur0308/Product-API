@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="w-full h-screen bg-gray-200 py-[50px] px-[100px]">
+
+    <div id="loading" class="loader__wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <div class="bg-gray-200 flex gap-[20px] forms">
+        <form id="createForm">
+            <h3 class="text-[32px]">Create a new product</h3>
+            <input class="inputElement shadow-2xl max-w-[1400px] w-full border-[2px] rounded-lg mt-[5px] py-[7px] px-[10px]" type="text" placeholder="Enter product name">
+            <input class="inputElement shadow-2xl max-w-[1400px] w-full border-[2px] rounded-lg mt-[5px] py-[7px] px-[10px]" type="number" placeholder="Enter product price">
+            <textarea class="inputElement shadow-2xl max-w-[1400px] w-full border-[2px] mt-[5px] rounded-lg px-[10px] py-[7px] min-h-[30px]" cols="30" rows="10" placeholder="Enter product description"></textarea>
+            <input class="inputElement shadow-2xl max-w-[1400px] w-full border-[2px] rounded-lg mt-[5px] py-[7px] px-[10px]" type="number" placeholder="Enter product discount">
+            <input class="inputElement shadow-2xl max-w-[1400px] w-full border-[2px] rounded-lg mt-[5px] py-[7px] px-[10px]" type="url" placeholder="Enter product image-link">
+            <button class="create__btn shadow-2xl max-w-[100px] w-full mt-[10px] px-20px py-[10px] rounded-lg text-white">Create</button>
+        </form>
+
+        <form id="updateForm">
+            <h3 class="text-[32px]">Update a product</h3>
+            <input class="inputElement shadow-2xl max-w-[1400px] w-full border-[2px] rounded-lg mt-[5px] py-[7px] px-[10px]" type="text" placeholder="Enter product name">
+            <input class="inputElement shadow-2xl max-w-[1400px] w-full border-[2px] rounded-lg mt-[5px] py-[7px] px-[10px]" type="number" placeholder="Enter product price">
+            <textarea class="inputElement shadow-2xl max-w-[1400px] w-full border-[2px] mt-[5px] rounded-lg px-[10px] py-[7px] min-h-[30px]" cols="30" rows="10" placeholder="Enter product description"></textarea>
+            <input class="inputElement shadow-2xl max-w-[1400px] w-full border-[2px] rounded-lg mt-[5px] py-[7px] px-[10px]" type="number" placeholder="Enter product discount">
+            <input class="inputElement shadow-2xl max-w-[1400px] w-full border-[2px] rounded-lg mt-[5px] py-[7px] px-[10px]" type="url" placeholder="Enter product image-link">
+            <button class="update__btn shadow-2xl max-w-[100px] w-full mt-[10px] px-20px py-[10px] rounded-lg text-white">Update</button>
+        </form>
+    </div>
+    
+    <div id="products"></div>
+
+    <script src="./script/app.js"></script>
+</body>
+</html>
